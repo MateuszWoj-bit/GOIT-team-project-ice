@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://mateuszwoj-bit.github.io/GOIT-team-project-test",
+  "homepage": "https://MateuszWoj-bit.github.io/GOIT-team-project-test",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /GOIT-team-project-test/"
