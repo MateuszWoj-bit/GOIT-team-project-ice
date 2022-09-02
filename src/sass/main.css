@@ -41,4 +41,67 @@
 
 .reviews__test {
   font-size: 15px;
+}
+
+.advantage {
+  list-style: none;
+  padding-top: 38px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
+}
+.advantage__list-item {
+  flex-basis: calc((100% - 20px) / 1);
+}
+.advantage__list-item--icon1::before {
+  content: "";
+  width: 33px;
+  height: 55px;
+  display: block;
+  background: url(/images/ice.png) no-repeat;
+}
+.advantage__list-item--icon2::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  display: block;
+  background: url(/images/ice1.png) no-repeat;
+}
+.advantage__list-item--icon3::before {
+  content: "";
+  width: 44px;
+  height: 50px;
+  display: block;
+  background: url(/images/ice2.png) no-repeat;
+}
+.advantage__paragarph--value {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 114%;
+  letter-spacing: 0.04em;
+  color: #d41443;
+}
+.advantage__paragarph--description {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 170%;
+  color: #000000;
+  margin-bottom: 38px;
+}
+
+.background-advantage {
+  background-color: #FFF5F6;
+}
+
+.hidden-advantage {
+  display: none;
+}
+
+.flexbox-advantage {
+  max-width: 320px;
 }/*# sourceMappingURL=main.css.map */
