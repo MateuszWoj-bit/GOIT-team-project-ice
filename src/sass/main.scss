@@ -4,10 +4,18 @@
  */
 
 // Style dla pliku z przykładem HTML fragmentu
+@import './Base/containers';
 @import './example';
 @import './test';
 @import './reviews';
 
-@import "./partials/about";
+@import './Components/Advantage/advantage';
+@import './Components/Advantage/background-advantage';
+@import './Components/Advantage/hidden-advantage';
+@import './Components/Advantage/flexbox-advantage';
+
+
+@import "./partials/about";,
 @import "./base/container";
 @import "./base/variables";
+
