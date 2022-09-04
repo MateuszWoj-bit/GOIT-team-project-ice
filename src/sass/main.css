@@ -7,16 +7,119 @@
   width: 100vw;
   max-width: 1280px;
   margin: 0 auto;
+  background-color: #ffb8ca;
+  padding-top: 6px;
 }
 
 .container-header {
   width: calc(100% - 40px);
   margin: 0 auto;
+  height: 496px;
 }
 
 .container-nav {
   width: 100%;
   margin: 0 auto;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 12px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger {
+  width: 20px;
+  height: 1px;
+  background: #d41443;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::after, .menu-btn__burger::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 1px;
+  background: #d41443;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+.menu-btn__burger::before {
+  transform: translateY(-7px);
+}
+.menu-btn__burger::after {
+  transform: translateY(7px);
+}
+
+/* Animation */
+.menu-btn.open .menu-btn__burger {
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  transform: rotate(45deg);
+  background: #ffffff;
+  width: 14px;
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  transform: rotate(-45deg);
+  background: #ffffff;
+  width: 14px;
+}
+
+.header__title {
+  text-transform: uppercase;
+  max-width: 218px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  position: absolute;
+  top: 193px;
+  z-index: 20;
+  margin: 0;
+}
+.header__title--mod {
+  font-size: 48px;
+  line-height: 45px;
+  color: #d41443;
+  position: relative;
+  top: 0;
+}
+
+.ellipse {
+  position: absolute;
+  top: 83px;
+  right: 0;
+}
+
+.ice-header {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 10;
+}
+
+.test {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: green;
+}
+
+.test-ice {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: lightseagreen;
 }
 
 .reviews__test {

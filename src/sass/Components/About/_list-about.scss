@@ -1,0 +1,21 @@
+.about__list {
+  list-style: none;
+  text-decoration: none;
+}
+.about__item {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000000;
+
+  text-align: left;
+  &--light {
+    font-size: 14px;
+    line-height: 194%;
+    letter-spacing: 0.04em;
+    color: #907e82;
+  }
+}
