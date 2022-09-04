@@ -193,4 +193,185 @@
     margin-top: 55px;
     margin-bottom: 39px;
   }
+}
+.contacts {
+  font-family: "DM Sans";
+  font-size: 12px;
+  font-weight: 500;
+}
+.contacts__content {
+  display: flex;
+  justify-content: center;
+}
+.contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.contacts__item {
+  padding-top: 43px;
+  padding-left: 20px;
+  padding-right: 21px;
+  width: 220px;
+  height: 427px;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  margin-bottom: 20px;
+}
+.contacts__headline {
+  margin: 0;
+  width: 80px;
+  height: 16px;
+  background-color: #F0D1A5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: white;
+}
+.contacts__headline-foodtruck {
+  width: 130px;
+  background-color: #C2E297;
+}
+.contacts__information {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #E1E1E1;
+}
+.contacts__location {
+  margin-bottom: 10px;
+  margin-top: 0;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+}
+.contacts__descriptions {
+  margin: 0;
+  line-height: 1.5;
+  color: #907E82;
+}
+.contacts__days {
+  margin: 0;
+  line-height: 1.86;
+}
+.contacts__hours {
+  margin: 0;
+  color: #FFA5BA;
+  line-height: 1.86;
+}
+.contacts__open:not(:last-child) {
+  padding-bottom: 10px;
+}
+.contacts__details {
+  padding-top: 25px;
+}
+.contacts__number, .contacts__mail {
+  text-decoration: none;
+  color: #907E82;
+  line-height: 1.5;
+  cursor: pointer;
+}
+.contacts__buttons {
+  margin-top: 34px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.contacts__button-locations, .contacts__button-franchise {
+  width: 161.45px;
+  height: 44px;
+  border: none;
+  border-radius: 22px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.31;
+}
+.contacts__button-locations {
+  background-color: #D41342;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .contacts {
+    font-size: 14px;
+  }
+  .contacts__list {
+    display: flex;
+    gap: 20px;
+  }
+  .contacts__item {
+    padding-top: 50px;
+    padding-left: 31px;
+    padding-right: 32px;
+    height: 544px;
+    margin: 0;
+  }
+  .contacts__headline {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .contacts__headline-foodtruck {
+    width: 138px;
+  }
+  .contacts__information {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .contacts__open:not(:last-child) {
+    padding-bottom: 16px;
+  }
+  .contacts__details {
+    padding-top: 30px;
+  }
+  .contacts__number, .contacts__mail {
+    line-height: 1.83;
+  }
+  .contacts__buttons {
+    margin-top: 81px;
+    display: flex;
+    flex-direction: unset;
+    align-items: center;
+    justify-content: center;
+  }
+  .contacts__button-locations {
+    width: 191.45px;
+  }
+  .contacts__button-franchise {
+    width: 174.05px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    font-size: 16px;
+  }
+  .contacts__list {
+    gap: 30px;
+  }
+  .contacts__item {
+    padding-top: 51px;
+    padding-left: 43px;
+    padding-right: 44px;
+    width: 330px;
+    height: 572px;
+  }
+  .contacts__information {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .contacts__open:not(:last-child) {
+    padding-bottom: 15px;
+  }
+  .contacts__details {
+    padding-top: 32px;
+  }
+  .contacts__button-locations {
+    width: 198px;
+  }
+  .contacts__button-franchise {
+    width: 180px;
+  }
 }/*# sourceMappingURL=main.css.map */
