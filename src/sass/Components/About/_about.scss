@@ -5,20 +5,23 @@
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
+  align-items: flex-end;
+
+  // width: 100%;
+  // display: flex;
+  // flex-direction: row;
 }
 
-// @media screen and (min-width: 768px) and (max-width: 1199px) {
-//     .about {
-//     background-image: url(" ");
-//     background-size: 768px 400px;
-
-//     display:none;
-//     }
-//   }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    background-image: none;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .about {
     background-image: url('/images/squoosh-milk1-desktop.png');
-    // background-size: 1600px 600px;
+    background-position: bottom;
+    background-size: 1282px 534px;
   }
 }
