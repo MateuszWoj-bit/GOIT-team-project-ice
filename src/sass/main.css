@@ -122,8 +122,81 @@
   color: lightseagreen;
 }
 
-.reviews__test {
-  font-size: 15px;
+ul {
+  margin-block-start: 0;
+  list-style-type: none;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0;
+}
+
+.reviews {
+  padding-top: 123px;
+  padding-bottom: 132px;
+}
+
+.reviews-container {
+  margin: auto 132px;
+  width: 926px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review {
+  background-color: rgb(250, 250, 250);
+  width: 926px;
+  height: 138px;
+}
+
+.quotes-icon {
+  width: 54px;
+  height: 40px;
+}
+
+.circles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin: 17px 0;
+}
+
+.circle {
+  font-size: 4px;
+  color: var(--third-color);
+  margin-right: 10px;
+}
+
+.circle:last-child {
+  margin-right: 0;
+}
+
+.customer {
+  margin: 0 auto;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.86;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  margin-top: 35px;
+}
+
+.navigation__item--dot {
+  font-size: 12px;
+  margin-right: 18px;
+}
+
+.navigation__item--dot:last-child {
+  margin-right: 0;
 }
 
 .advantage {
@@ -229,7 +302,7 @@
   background-color: #fff5f6;
   background-image: url("/images/squoosh-milk3-mobile.png");
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center;
   text-align: center;
 }
 
@@ -244,9 +317,17 @@
   margin: 0 auto;
 }
 
+.about__box-title {
+  justify-content: center;
+}
+
 @media screen and (min-width: 320px) {
   .about__container {
     max-width: 320px;
+  }
+  .about__box-title {
+    padding-left: 61px;
+    padding-right: 61px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -257,7 +338,6 @@
 @media screen and (min-width: 1200px) {
   .about__container {
     max-width: 1200px;
-    padding: 115px;
   }
 }
 :root {
@@ -477,4 +557,75 @@
   .contacts__button-franchise {
     width: 180px;
   }
+}
+.about__label {
+  font-family: "Titan One";
+  font-weight: 400;
+  text-align: center;
+  color: #ffa5ba;
+}
+
+.about__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  text-align: center;
+  color: #d41443;
+}
+
+@media screen and (min-width: 320px) {
+  .about__label {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+  .about__title {
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__label {
+    font-size: 26px;
+    line-height: 1.153;
+  }
+  .about__title {
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__label {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+    margin-top: 125px;
+  }
+  .about__title {
+    font-size: 58px;
+    line-height: 1.137;
+    letter-spacing: 0.06em;
+    margin-top: 15px;
+  }
+}
+.about__list {
+  list-style: none;
+  text-decoration: none;
+}
+
+.about__item {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000000;
+  text-align: left;
+}
+.about__item--light {
+  font-size: 14px;
+  line-height: 194%;
+  letter-spacing: 0.04em;
+  color: #907e82;
 }/*# sourceMappingURL=main.css.map */
