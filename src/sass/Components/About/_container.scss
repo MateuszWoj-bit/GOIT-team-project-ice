@@ -1,20 +1,21 @@
-.container {
+.about__container {
     width: 100%;
     align-items: center;
     margin: 0 auto;
 }
 @media screen and (min-width: 320px) {
-    .container {
-        max-width: 480px;
+    .about__container {
+        max-width: 320px;
     }
 }
 @media screen and (min-width: 768px) {
-    .container {
+    .about__container {
         max-width: 768px;
     }
 }
 @media screen and (min-width: 1200px) {
-    .container {
+    .about__container {
         max-width: 1200px;
+        padding: 115px;
     }
 }

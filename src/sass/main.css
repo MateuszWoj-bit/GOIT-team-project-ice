@@ -131,6 +131,7 @@
   padding-top: 38px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   gap: 10px;
   padding: 0;
 }
@@ -141,21 +142,21 @@
   content: "";
   width: 33px;
   height: 55px;
-  display: block;
+  display: flex;
   background: url(/images/ice.png) no-repeat;
 }
 .advantage__list-item--icon2::before {
   content: "";
   width: 50px;
-  height: 50px;
-  display: block;
+  height: 55px;
+  display: flex;
   background: url(/images/ice1.png) no-repeat;
 }
 .advantage__list-item--icon3::before {
   content: "";
   width: 44px;
-  height: 50px;
-  display: block;
+  height: 55px;
+  display: flex;
   background: url(/images/ice2.png) no-repeat;
 }
 .advantage__paragarph--value {
@@ -169,7 +170,7 @@
 }
 .advantage__paragarph--description {
   font-family: "DM Sans";
-  font-style: normal;
+  font-style: bold;
   font-weight: 700;
   font-size: 12px;
   line-height: 170%;
@@ -177,6 +178,28 @@
   margin-bottom: 38px;
 }
 
+@media screen and (min-width: 768px) {
+  .advantage__list-item {
+    flex-basis: calc((100% - 200px) / 3);
+  }
+  .advantage__paragarph--value {
+    margin-top: 40px;
+  }
+  .advantage__paragarph--description {
+    font-size: 14px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1280px) {
+  .advantage__list-item {
+    flex-basis: calc((100% - 300px) / 3);
+  }
+  .advantage__paragarph--value {
+    margin-top: 40px;
+  }
+  .advantage__paragarph--description {
+    font-size: 16px;
+  }
+}
 .background-advantage {
   background-color: #FFF5F6;
 }
@@ -186,5 +209,91 @@
 }
 
 .flexbox-advantage {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
   max-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .flexbox-advantage {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .flexbox-advantage {
+    max-width: 1280px;
+  }
+}
+.about {
+  background-color: #fff5f6;
+  background-image: url("/images/squoosh-milk3-mobile.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    background-image: url("/images/squoosh-milk1-desktop.png");
+  }
+}
+.about__container {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 320px) {
+  .about__container {
+    max-width: 320px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__container {
+    max-width: 1200px;
+    padding: 115px;
+  }
+}
+:root {
+  --main-color: #FFA5BA;
+  --secondary-color: #FFF5F6;
+  --third-color: #D41443;
+  --fourth-color: #907E82;
+}
+
+.is-hidden-about {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 320px) {
+  .about__cow {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 26px;
+    margin-bottom: 46px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__cow {
+    margin-left: 39px;
+    margin-right: 393px;
+    margin-top: 50px;
+    margin-bottom: 56px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__cow {
+    margin-left: 112px;
+    margin-right: 654px;
+    margin-top: 55px;
+    margin-bottom: 39px;
+  }
 }/*# sourceMappingURL=main.css.map */
