@@ -1,0 +1,25 @@
+.btn {
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+//   display: flex;
+//   align-items: center;
+//   text-align: center;
+
+  color: #d41443;
+
+  width: 176px;
+  height: 44px;
+  left: 702px;
+  top: 2470px;
+
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
+
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+}
