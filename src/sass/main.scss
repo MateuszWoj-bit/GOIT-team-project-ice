@@ -5,6 +5,11 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './Base/containers';
+@import './Components/menu-btn';
+@import './Components/header';
+@import './Components/ellipse';
+@import './Components/ice-header';
+@import './test';
 // @import './example';
 // @import './test';
 @import './reviews';
@@ -14,6 +19,9 @@
 @import './Components/Advantage/hidden-advantage';
 @import './Components/Advantage/flexbox-advantage';
 
+// @import "./partials/about";
+// @import "./base/container";
+// @import "./base/variables";
 @import './Components/About/about';
 @import './Components/About/container';
 @import './Components/About/variables';
