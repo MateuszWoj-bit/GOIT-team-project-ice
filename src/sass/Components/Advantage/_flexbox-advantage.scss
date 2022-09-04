@@ -1,1 +1,17 @@
-.flexbox-advantage{max-width: 320px;}
+.flexbox-advantage {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 320px;
+}
+
+@media screen and (min-width: 768px) {
+  .flexbox-advantage {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .flexbox-advantage {
+    max-width: 1280px;
+  }
+}
