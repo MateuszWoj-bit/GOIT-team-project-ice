@@ -42,11 +42,11 @@
 }
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
-  background: #FFFFFF;
+  background: #ffffff;
   width: 14px;
 }
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
-  background: #FFFFFF;
-   width: 14px;
+  background: #ffffff;
+  width: 14px;
 }

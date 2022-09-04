@@ -14,7 +14,7 @@
 .container-header {
   width: calc(100% - 40px);
   margin: 0 auto;
-  height: 502px;
+  height: 496px;
 }
 
 .container-nav {
@@ -66,14 +66,50 @@
 
 .menu-btn.open .menu-btn__burger::before {
   transform: rotate(45deg);
-  background: #FFFFFF;
+  background: #ffffff;
   width: 14px;
 }
 
 .menu-btn.open .menu-btn__burger::after {
   transform: rotate(-45deg);
-  background: #FFFFFF;
+  background: #ffffff;
   width: 14px;
+}
+
+.header__title {
+  text-transform: uppercase;
+  max-width: 218px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  position: absolute;
+  top: 193px;
+  z-index: 20;
+  margin: 0;
+}
+.header__title--mod {
+  font-size: 48px;
+  line-height: 45px;
+  color: #d41443;
+  position: relative;
+  top: 0;
+}
+
+.ellipse {
+  position: absolute;
+  top: 83px;
+  right: 0;
+}
+
+.ice-header {
+  position: absolute;
+  top: 92px;
+  right: 32px;
+  z-index: 10;
 }
 
 .test {
