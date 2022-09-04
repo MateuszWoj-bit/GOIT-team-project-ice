@@ -1,0 +1,58 @@
+.about__label {
+  font-family: 'Titan One';
+  font-weight: 400;
+  text-align: center;
+  color: #ffa5ba;
+}
+.about__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  text-align: center;
+  color: #d41443;
+}
+
+@media screen and (min-width: 320px) {
+  .about__label {
+    font-size: 18px;
+    line-height: 1.166;
+  }
+  .about__title {
+    font-size: 34px;
+    line-height: 1.147;
+    letter-spacing: 0.04em;
+    // margin-top: 15px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__label {
+    font-size: 26px;
+    line-height: 1.153;
+    // margin-top: 130px;
+  }
+  .about__title {
+    font-size: 48px;
+    line-height: 1.145;
+    letter-spacing: 0.04em;
+    // margin-top: 16px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__label {
+    font-size: 30px;
+    line-height: 1.133;
+    letter-spacing: 0.04em;
+
+    // padding-left: 464px;
+    // padding-right: 465px;
+    margin-top: 125px;
+  }
+  .about__title {
+    font-size: 58px;
+    line-height: 1.137;
+    letter-spacing: 0.06em;
+
+    // padding-left: 373px;
+    // padding-right: 373px;
+    margin-top: 15px;
+  }
+}
