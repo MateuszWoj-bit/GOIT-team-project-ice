@@ -40,6 +40,10 @@
     padding-top: 37px;
     height: 665px;
   }
+  .container-nav {
+    gap: 110px;
+    justify-content: left;
+  }
 }
 .menu-btn {
   display: flex;
@@ -91,6 +95,11 @@
   width: 14px;
 }
 
+@media (min-width: 1200px) {
+  .menu-btn {
+    display: none;
+  }
+}
 .header__title {
   text-transform: uppercase;
   width: 218px;
@@ -354,6 +363,9 @@
 .nav__buy-btn {
   display: none;
 }
+.nav__list {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .nav {
@@ -380,6 +392,24 @@
     width: 160px;
     height: 44px;
     z-index: 20;
+  }
+  .nav__list {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .nav {
+    gap: 110px;
+  }
+  .nav__list {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    display: flex;
+    gap: 35px;
   }
 }
 ul {
