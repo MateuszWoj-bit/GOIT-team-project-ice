@@ -103,7 +103,7 @@
     &__girl {
       display: block;
       position: absolute;
-      right: 14px;
+      right: 0;
       top: 266px;
     }
     &__milk {
@@ -136,7 +136,7 @@
       height: 48px;
       position: absolute;
       top: 292px;
-      left: 134px;
+      left: 120px;
     }
     &__arrow {
       width: 18px;
@@ -149,7 +149,7 @@
       background-color: transparent;
       position: absolute;
       top: 347px;
-      left: 134px;
+      left: 120px;
     }
   }
 }
