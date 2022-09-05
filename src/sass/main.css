@@ -31,9 +31,14 @@
   .container-header {
     width: calc(100% - 68px);
     padding-top: 31px;
-  }
-  .container-header {
     height: 399px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-header {
+    width: calc(100% - 92px);
+    padding-top: 37px;
+    height: 665px;
   }
 }
 .menu-btn {
