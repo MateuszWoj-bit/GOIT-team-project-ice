@@ -204,23 +204,36 @@
 }
 
 .nav__buy-btn {
-  font-family: "DM Sans";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 21px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  color: #d41443;
-  background: #ffffff;
-  border-radius: 22px;
-  border: none;
-  width: 160px;
-  height: 44px;
+  display: none;
 }
 
+@media (min-width: 768px) {
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    z-index: 20;
+  }
+  .nav__buy-btn {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #d41443;
+    background: #ffffff;
+    border-radius: 22px;
+    border: none;
+    width: 160px;
+    height: 44px;
+    z-index: 20;
+  }
+}
 ul {
   -webkit-margin-before: 0;
           margin-block-start: 0;
