@@ -1,6 +1,9 @@
 .about__list {
   list-style: none;
   text-decoration: none;
+  margin-top: 106px;
+  margin-left: 76px;
+  // margin-right: 117px;
 }
 .about__item {
   font-family: 'DM Sans';
@@ -12,10 +15,16 @@
   color: #000000;
 
   text-align: left;
+
   &--light {
     font-size: 14px;
     line-height: 194%;
     letter-spacing: 0.04em;
     color: #907e82;
+  }
+}
+.about__list {
+  .about__item {
+    margin-bottom: 35px;
   }
 }
