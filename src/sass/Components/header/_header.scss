@@ -62,6 +62,18 @@
     gap: 8px;
     z-index: 15;
   }
+  &__girl {
+    display: none;
+  }
+  &__milk {
+    display: none;
+  }
+  &__cafenr {
+    display: none;
+  }
+  &__foodtracknr {
+    display: none;
+  }
 }
 
 // <!-- Tablet -->
@@ -81,6 +93,29 @@
       left: 0;
       top: 55px;
       font-size: 34px;
+    }
+    &__girl {
+      display: block;
+      position: absolute;
+      right: 14px;
+      top: 266px;
+    }
+    &__milk {
+      display: block;
+      position: absolute;
+      top: 245px;
+    }
+    &__cafenr {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 96px;
+    }
+    &__foodtracknr {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 152px;
     }
   }
 }

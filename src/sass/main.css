@@ -149,6 +149,18 @@
   gap: 8px;
   z-index: 15;
 }
+.header__girl {
+  display: none;
+}
+.header__milk {
+  display: none;
+}
+.header__cafenr {
+  display: none;
+}
+.header__foodtracknr {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .header__list {
@@ -165,6 +177,29 @@
     left: 0;
     top: 55px;
     font-size: 34px;
+  }
+  .header__girl {
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 266px;
+  }
+  .header__milk {
+    display: block;
+    position: absolute;
+    top: 245px;
+  }
+  .header__cafenr {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 96px;
+  }
+  .header__foodtracknr {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 152px;
   }
 }
 .ellipse {
@@ -190,7 +225,7 @@
 @media (min-width: 768px) {
   .ice-header {
     top: 63px;
-    right: 0;
+    right: -20px;
     margin-right: 227px;
   }
 }
