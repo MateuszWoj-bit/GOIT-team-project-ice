@@ -1,0 +1,29 @@
+.about__container {
+  width: 100%;
+  align-items: center;
+  margin: 0 auto;
+}
+.about__box-title {
+  justify-content: center;
+}
+@media screen and (min-width: 320px) {
+  .about__container {
+    max-width: 320px;
+  }
+  .about__box-title {
+    padding-left: 61px;
+    padding-right: 61px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__container {
+    max-width: 1200px;
+    // padding: 115px;
+  }
+}
