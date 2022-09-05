@@ -161,6 +161,12 @@
 .header__foodtracknr {
   display: none;
 }
+.header__description {
+  display: none;
+}
+.header__arrow-btn {
+  display: none;
+}
 
 @media (min-width: 768px) {
   .header__list {
@@ -200,6 +206,33 @@
     position: absolute;
     right: 0;
     top: 152px;
+  }
+  .header__description {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 12px;
+    color: #ffffff;
+    display: block;
+    width: 114px;
+    height: 48px;
+    position: absolute;
+    top: 292px;
+    left: 134px;
+  }
+  .header__arrow {
+    width: 18px;
+    height: 18px;
+  }
+  .header__arrow-btn {
+    display: block;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 347px;
+    left: 134px;
   }
 }
 .ellipse {

@@ -74,6 +74,12 @@
   &__foodtracknr {
     display: none;
   }
+  &__description {
+    display: none;
+  }
+  &__arrow-btn {
+    display: none;
+  }
 }
 
 // <!-- Tablet -->
@@ -116,6 +122,34 @@
       position: absolute;
       right: 0;
       top: 152px;
+    }
+    &__description {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 8px;
+      line-height: 12px;
+      color: #ffffff;
+
+      display: block;
+      width: 114px;
+      height: 48px;
+      position: absolute;
+      top: 292px;
+      left: 134px;
+    }
+    &__arrow {
+      width: 18px;
+      height: 18px;
+    }
+    &__arrow-btn {
+      display: block;
+      border: none;
+      padding: 0;
+      background-color: transparent;
+      position: absolute;
+      top: 347px;
+      left: 134px;
     }
   }
 }
