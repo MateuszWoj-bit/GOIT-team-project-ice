@@ -1,9 +1,11 @@
 .about__list {
   list-style: none;
   text-decoration: none;
-  margin-top: 106px;
-  margin-left: 76px;
-  // margin-right: 117px;
+  margin: 0 auto;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 39px;
 }
 .about__item {
   font-family: 'DM Sans';
@@ -26,5 +28,13 @@
 .about__list {
   .about__item {
     margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__list {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 66px;
   }
 }

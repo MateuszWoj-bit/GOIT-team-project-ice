@@ -25,3 +25,14 @@
     background: #ecebeb;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .btn {
+    margin-top: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-top: 0px;
+  }
+}

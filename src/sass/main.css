@@ -878,10 +878,16 @@ p {
   background: #ecebeb;
 }
 
+.hidden-contacts-header {
+  display: none;
+}
+
 .contacts {
   font-family: "DM Sans";
   font-size: 12px;
   font-weight: 500;
+  background: rgb(255, 245, 246);
+  background: linear-gradient(0deg, rgb(255, 245, 246) 94%, rgb(255, 255, 255) 94%);
 }
 .contacts__content {
   display: flex;
@@ -901,6 +907,7 @@ p {
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
   margin-bottom: 20px;
+  background-color: #FFFFFF;
 }
 .contacts__headline {
   margin: 0;
@@ -981,6 +988,8 @@ p {
 @media screen and (min-width: 768px) {
   .contacts {
     font-size: 14px;
+    background: rgb(255, 245, 246);
+    background: linear-gradient(0deg, rgb(255, 245, 246) 88%, rgb(255, 255, 255) 88%);
   }
   .contacts__list {
     display: flex;
@@ -1031,6 +1040,9 @@ p {
 @media screen and (min-width: 1200px) {
   .contacts {
     font-size: 16px;
+    background: rgb(255, 245, 246);
+    background: linear-gradient(0deg, rgb(255, 245, 246) 85%, rgb(255, 255, 255) 85%);
+    background-image: url(images/contacts-bg.png);
   }
   .contacts__list {
     gap: 30px;
