@@ -1,0 +1,21 @@
+.nav {
+  &__buy-btn {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #d41443;
+
+    background: #ffffff;
+    border-radius: 22px;
+    border: none;
+    width: 160px;
+    height: 44px;
+
+  }
+}
