@@ -8,8 +8,9 @@
 .container-header {
   width: calc(100% - 40px);
   margin: 0 auto;
-  height: 496px;
+  height: 502px;
   padding-top: 6px;
+  position: relative;
 }
 
 .container-nav {
@@ -25,7 +26,7 @@
 @media (min-width: 768px) {
   .container-header {
     width: calc(100% - 68px);
-    padding-top: 37px;
+    padding-top: 31px;
   }
   .container-header{
     height: 399px;

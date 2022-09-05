@@ -1,13 +1,13 @@
 .ellipse {
   position: absolute;
   top: 83px;
-  right: 0;
+  right: -20px;
 }
 // <!-- Tablet -->
 @media (min-width: 768px) {
   .ellipse {
     max-width: 324px;
-    margin-right: 137px;
+    margin-right: 117px;
     top: 31px;
   }
 }
