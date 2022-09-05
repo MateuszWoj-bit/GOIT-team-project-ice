@@ -8,8 +8,9 @@
 .container-header {
   width: calc(100% - 40px);
   margin: 0 auto;
-  height: 496px;
+  height: 502px;
   padding-top: 6px;
+  position: relative;
 }
 
 .container-nav {
@@ -22,12 +23,23 @@
 }
 
 // <!-- Tablet -->
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container-header {
     width: calc(100% - 68px);
-    padding-top: 37px;
-  }
-  .container-header{
+    padding-top: 31px;
     height: 399px;
+  }
+}
+
+// <!-- Desktop -->
+@media (min-width: 1200px) {
+  .container-header {
+    width: calc(100% - 92px);
+    padding-top: 37px;
+    height: 665px;
+  }
+  .container-nav{
+    gap: 110px;
+    justify-content: left;
   }
 }

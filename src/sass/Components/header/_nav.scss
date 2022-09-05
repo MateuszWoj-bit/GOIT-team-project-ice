@@ -1,7 +1,9 @@
 .nav {
-
-    &__buy-btn{
-        display: none;
+  &__buy-btn {
+    display: none;
+  }
+  &__list{
+      display: none;
     }
 }
 
@@ -32,6 +34,28 @@
       width: 160px;
       height: 44px;
       z-index: 20;
+    }
+    &__list{
+      display: none;
+    }
+  }
+}
+
+// <!-- Desktop -->
+@media (min-width: 1200px) {
+  .nav {
+    gap: 110px;
+
+    &__list {
+      font-family: 'DM Sans';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      color: #ffffff;
+
+      display: flex;
+      gap: 35px;
     }
   }
 }

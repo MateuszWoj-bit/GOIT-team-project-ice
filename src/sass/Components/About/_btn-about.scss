@@ -1,4 +1,4 @@
-.btn {
+.about__btn {
   display: flex;
   align-items: center;
   text-align: center;
@@ -37,4 +37,10 @@
   .btn {
     margin-top: 0px;
   }
+}
+.about__icon-2 {
+  width: 8px;
+  height: 14px;
+  margin-left: 10px;
+  align-items: flex-end;
 }
