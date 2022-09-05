@@ -1,0 +1,9 @@
+.gallery {
+  &__bground {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 1) 33%, rgba(255, 184, 202, 1) 100%);
+  }
+  &__pic {
+    width: 100%;
+  }
+}
