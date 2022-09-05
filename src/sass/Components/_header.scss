@@ -37,7 +37,6 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    z-index: 15;
   }
   &__how-btn {
     background: #ffffff;
@@ -55,13 +54,13 @@
     justify-content: center;
     color: #d41443;
     border: none;
-    z-index: 15;
   }
   &__list {
     display: flex;
     position: absolute;
     top: 318px;
     gap: 8px;
+    z-index: 15;
   }
 }
 
@@ -72,12 +71,16 @@
       top: 202px;
     }
     &__title {
+      max-width: 162px;
       top: 102px;
+      font-size: 22px;
+      line-height: 25.19px;
     }
     &__title--mod {
       position: absolute;
       left: 0;
       top: 55px;
+      font-size: 34px;
     }
   }
 }
