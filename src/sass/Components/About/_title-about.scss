@@ -20,20 +20,18 @@
     font-size: 34px;
     line-height: 1.147;
     letter-spacing: 0.04em;
-    // margin-top: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .about__label {
     font-size: 26px;
     line-height: 1.153;
-    // margin-top: 130px;
   }
   .about__title {
     font-size: 48px;
     line-height: 1.145;
     letter-spacing: 0.04em;
-    // margin-top: 16px;
+    margin-top: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -41,7 +39,6 @@
     font-size: 30px;
     line-height: 1.133;
     letter-spacing: 0.04em;
-    // margin-top: 125px;
   }
   .about__title {
     font-size: 58px;
