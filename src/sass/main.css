@@ -27,7 +27,7 @@
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container-header {
     width: calc(100% - 68px);
     padding-top: 31px;
@@ -93,7 +93,7 @@
 
 .header__title {
   text-transform: uppercase;
-  max-width: 218px;
+  width: 218px;
   font-family: "Titan One";
   font-style: normal;
   font-weight: 400;
@@ -178,7 +178,7 @@
     top: 202px;
   }
   .header__title {
-    max-width: 162px;
+    width: 162px;
     top: 102px;
     font-size: 22px;
     line-height: 25.19px;
@@ -240,17 +240,86 @@
     left: 120px;
   }
 }
+@media (min-width: 1200px) {
+  .header__girl {
+    top: 433px;
+    right: 63px;
+  }
+  .header__cafenr {
+    top: 160px;
+    right: 69px;
+  }
+  .header__foodtracknr {
+    top: 248px;
+    right: 69px;
+  }
+  .header__milk {
+    top: 429px;
+  }
+  .header__arrow {
+    width: 26px;
+    height: 26px;
+  }
+  .header__arrow-btn {
+    top: 583px;
+    left: 218px;
+  }
+  .header__description {
+    font-size: 14px;
+    line-height: 20px;
+    top: 485px;
+    left: 218px;
+    width: 200px;
+    height: 78px;
+  }
+  .header__product-btn {
+    font-size: 14px;
+    line-height: 18px;
+    width: 102px;
+    height: 40px;
+  }
+  .header__list {
+    top: 333px;
+  }
+  .header__how-btn {
+    font-size: 14px;
+    line-height: 18px;
+    width: 138px;
+    height: 40px;
+  }
+  .header__title {
+    font-size: 37px;
+    line-height: 42px;
+    width: 277px;
+    left: 69px;
+    top: 171px;
+  }
+  .header__title--mod {
+    font-size: 58px;
+    line-height: 52px;
+    top: 80px;
+    left: 0;
+  }
+}
 .ellipse {
   position: absolute;
   top: 83px;
   right: -20px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .ellipse {
     max-width: 324px;
     margin-right: 117px;
     top: 31px;
+  }
+}
+@media (min-width: 1200px) {
+  .ellipse {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    right: 221px;
   }
 }
 .ice-header {
@@ -260,11 +329,16 @@
   z-index: 10;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .ice-header {
     top: 63px;
-    right: -20px;
-    margin-right: 227px;
+    right: 227px;
+  }
+}
+@media (min-width: 1200px) {
+  .ice-header {
+    top: 108px;
+    right: 404px;
   }
 }
 .test {

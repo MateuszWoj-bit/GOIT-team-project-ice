@@ -6,10 +6,17 @@
 }
 
 // <!-- Tablet -->
-@media (min-width: 768px){
-  .ice-header{
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ice-header {
     top: 63px;
-    right: -20px;
-    margin-right: 227px;
+    right: 227px;
+  }
+}
+
+// <!-- Desktop -->
+@media (min-width: 1200px) {
+  .ice-header{
+    top: 108px;
+    right: 404px;
   }
 }
