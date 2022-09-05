@@ -1,25 +1,40 @@
 .btn {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
   font-family: 'DM Sans';
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-//   display: flex;
-//   align-items: center;
-//   text-align: center;
-
   color: #d41443;
+  background: #ffffff;
+  border-radius: 22px;
+  border: none;
 
   width: 176px;
   height: 44px;
   left: 702px;
   top: 2470px;
 
-  background: #ffffff;
-  border-radius: 22px;
-  border: none;
+  padding-left: 37px;
+  padding-right: 37px;
+
+  cursor: crosshair;
 
   &:hover,
   &:focus {
     background: #ecebeb;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .btn {
+    margin-top: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-top: 0px;
   }
 }

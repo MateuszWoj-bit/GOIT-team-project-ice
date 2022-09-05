@@ -1,8 +1,13 @@
+.hidden-contacts-header {
+    display: none;
+}
 .contacts {
     font-family: 'DM Sans';
     font-size: 12px;
     font-weight: 500;
-    
+    background: rgb(255,245,246);
+    background: linear-gradient(0deg, rgba(255,245,246,1) 95%, rgba(255,255,255,1) 95%);
+    padding-bottom: 113px;
     &__content {
         display: flex;
         justify-content: center;
@@ -11,7 +16,6 @@
         list-style: none;
         padding: 0;
         margin: 0;
-        
     }
     &__item {
         padding-top: 43px;
@@ -22,6 +26,7 @@
         box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
         border-radius: 24px;
         margin-bottom: 20px;
+        background-color: #FFFFFF;
     }
     &__headline {
         margin: 0;
@@ -87,7 +92,6 @@
         gap: 10px;
     }
     &__button-locations, &__button-franchise {
-        width: 161.45px;
         height: 44px;
         border: none;
         border-radius: 22px;
@@ -96,14 +100,23 @@
         line-height: 1.31;
     }
     &__button-locations {
+        width: 161.45px;
         background-color: #D41342;
         color: #ffff;
+    }
+    &__button-franchise {
+        width: 161px;
+        background-color: #FFFFFF;
+        color: #D41443;
     }
 }
 
 @media screen and (min-width: 768px) {
     .contacts {
         font-size: 14px;
+        background: rgb(255,245,246);
+        background: linear-gradient(0deg, rgba(255,245,246,1) 91%, rgba(255,255,255,1) 91%);
+        padding-bottom: 165px;
         &__list {
             display: flex;
             gap: 20px;
@@ -142,6 +155,7 @@
             flex-direction: unset;
             align-items: center;
             justify-content: center;
+            gap: 14.5px;
         }
         &__button-locations {
             width: 191.45px;
@@ -154,6 +168,12 @@
 @media screen and (min-width: 1200px) {
     .contacts {
         font-size: 16px;
+        background: linear-gradient(0deg, rgba(255,245,246,1) 89%, rgba(255,255,255,1) 89%);
+        &__content {
+        background-image: url(../images/contacts-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        }    
         &__list {
             gap: 30px;
         }
@@ -173,6 +193,9 @@
         }
         &__details {
             padding-top: 32px;
+        }
+        &__buttons {
+            gap: 15px;
         }
         &__button-locations {
             width: 198px;

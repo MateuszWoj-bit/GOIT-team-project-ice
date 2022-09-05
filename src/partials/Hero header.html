@@ -1,27 +1,36 @@
 <div class="container-main">
   <div class="container-header">
+    
     <!-- Nawigation -->
     <div class="container-nav">
-      <picture>
-        <source srcset="./images/logo@1x.png x1, ./images/logo@2x.png x2" />
         <img src="./images/logo@1x.png" alt="icecream logo" />
-      </picture>
-      <div class="menu-btn">
-        <div class="menu-btn__burger"></div>
-      </div>
+      <section class="nav">
+          <div class="menu-btn">
+         <div class="menu-btn__burger"></div>
+        </div>
+        <button class="nav__buy-btn">Buy now></button>
+      </section>
     </div>
+    
 
     <!-- Hero -->
     <section class="header">
    <h1 class="header__title">ice cream made with <span class="header__title header__title--mod">passion</span></h1>
     <picture>
-      <source
-        media="(max-width: 767px)"
-        srcset="./images/icecream_headermob@1x.png 1x, ./images/icecream_headermob@2x.png 2x"
-      />
+      <source media="(max-width: 767px)"srcset="./images/icecream_headermob@1x.png 1x, ./images/icecream_headermob@2x.png 2x"/>
+      <source media="(min-width: 768px)"srcset="./images/icecream_headertab@1x.png 1x, ./images/icecream_headertab@2x.png 2x"/>
       <img class="ice-header" src="./images/icecream_headermob@1x.png" alt="big juicy icecream" />
     </picture>
+    <picture>
+      <source media="(max-width: 767px)"srcset="../src/images/ellipse.png"/>
+      <source media="(min-width: 768px)"srcset="../src/images/ellipsetab.png"/>
     <img class="ellipse" src="../src/images/ellipse.png" alt="ellipse" />
+    </picture>
+    <ul class="header__list">
+      <li class="header__item"><button class="header__product-btn">Products</button></li>
+      <li class="header__item"><button class="header__how-btn">How its's made?</button></li>
+    </ul>
+    
   </div>
 </div>
 </section>
