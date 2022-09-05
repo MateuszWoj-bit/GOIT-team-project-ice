@@ -1,0 +1,86 @@
+.header {
+  &__title {
+    text-transform: uppercase;
+    max-width: 218px;
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    position: absolute;
+    top: 193px;
+    z-index: 20;
+    margin: 0;
+  }
+  &__title--mod {
+    font-size: 48px;
+    line-height: 45px;
+    color: #d41443;
+    position: relative;
+    top: 0;
+  }
+  &__product-btn {
+    background: #d41443;
+    border-radius: 20px;
+    color: #ffffff;
+    border: none;
+    width: 62.4px;
+    height: 24px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  &__how-btn {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 82.8px;
+    height: 24px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #d41443;
+    border: none;
+  }
+  &__list {
+    display: flex;
+    position: absolute;
+    top: 318px;
+    gap: 8px;
+    z-index: 15;
+  }
+}
+
+// <!-- Tablet -->
+@media (min-width: 768px) {
+  .header {
+    &__list {
+      top: 202px;
+    }
+    &__title {
+      max-width: 162px;
+      top: 102px;
+      font-size: 22px;
+      line-height: 25.19px;
+    }
+    &__title--mod {
+      position: absolute;
+      left: 0;
+      top: 55px;
+      font-size: 34px;
+    }
+  }
+}
