@@ -1,35 +1,28 @@
-// .about__cow {
-  // height: auto;
-  // width: auto;
-// }
-
 @media screen and (min-width: 320px) {
   .about__cow {
-    // margin-left: 20px;
-    // margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 26px;
-    // margin-bottom: 46px;
-
-  //   max-width: 100%;
-  // height: auto;
+    margin-bottom: 46px;
   }
 }
 @media screen and (min-width: 768px) {
   .about__cow {
-    // margin-left: 39px;
-    // margin-right: 393px;
-    margin-top: 50px;
-    // margin-bottom: 56px;
+    padding-left: 39px;
+    padding-right: 0px;
+    margin-right: 17px;
+    margin-top: -50px;
 
-  //   max-width: 100%;
-  height: 340px;
+    height: 340px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about__cow {
-    // margin-left: 112px;
-    // margin-right: 654px;
-    margin-top: 55px;
-    // margin-bottom: 39px;
+    padding-left: 112px;
+    padding-right: 0px;
+    margin-right: 74px;
+    margin-top: -50px;
+
+    height: 516px;
   }
 }
