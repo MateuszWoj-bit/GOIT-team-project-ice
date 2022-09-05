@@ -3,13 +3,13 @@
   max-width: 1280px;
   margin: 0 auto;
   background-color: #ffb8ca;
-  padding-top: 6px;
 }
 
 .container-header {
   width: calc(100% - 40px);
   margin: 0 auto;
   height: 496px;
+  padding-top: 6px;
 }
 
 .container-nav {
@@ -19,4 +19,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+// <!-- Tablet -->
+@media (min-width: 768px) {
+  .container-header {
+    width: calc(100% - 68px);
+    padding-top: 37px;
+    min-width: 768px;
+  }
+  .container-header{
+    height: 399px;
+  }
 }

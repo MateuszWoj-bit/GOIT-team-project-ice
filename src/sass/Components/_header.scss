@@ -21,4 +21,63 @@
     position: relative;
     top: 0;
   }
+  &__product-btn {
+    background: #d41443;
+    border-radius: 20px;
+    color: #ffffff;
+    border: none;
+    width: 62.4px;
+    height: 24px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 15;
+  }
+  &__how-btn {
+    background: #ffffff;
+    border-radius: 20px;
+    width: 82.8px;
+    height: 24px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #d41443;
+    border: none;
+    z-index: 15;
+  }
+  &__list {
+    display: flex;
+    position: absolute;
+    top: 318px;
+    gap: 8px;
+  }
+}
+
+// <!-- Tablet -->
+@media (min-width: 768px) {
+  .header {
+    &__list {
+      top: 202px;
+    }
+    &__title {
+      top: 102px;
+    }
+    &__title--mod {
+      position: absolute;
+      left: 0;
+      top: 55px;
+    }
+  }
 }
