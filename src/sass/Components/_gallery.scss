@@ -1,0 +1,13 @@
+.gallery {
+  &__bground {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #fff5f6 40%, #ffffff 40%);
+  }
+  &__pic {
+    width: 100%;
+    max-width: 1280px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
