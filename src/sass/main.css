@@ -610,7 +610,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
   padding: 0;
 }
 .advantage__list-item {
@@ -660,24 +659,26 @@
 
 @media screen and (min-width: 768px) {
   .advantage__list-item {
-    flex-basis: calc((100% - 200px) / 3);
+    flex-basis: calc((100% - 10px) / 3);
   }
   .advantage__paragarph--value {
     margin-top: 40px;
   }
   .advantage__paragarph--description {
     font-size: 14px;
+    max-width: 180px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1280px) {
   .advantage__list-item {
-    flex-basis: calc((100% - 300px) / 3);
+    flex-basis: calc((100% - 10px) / 3);
   }
   .advantage__paragarph--value {
     margin-top: 40px;
   }
   .advantage__paragarph--description {
     font-size: 16px;
+    max-width: 330px;
   }
 }
 .background-advantage {
@@ -688,24 +689,15 @@
   display: none;
 }
 
-.flexbox-advantage {
+.container-advantage {
   width: 100%;
   align-items: center;
   margin: 0 auto;
-  max-width: 320px;
   padding-bottom: 40px;
+  padding-left: 20px;
+  max-width: 1280px;
 }
 
-@media screen and (min-width: 768px) {
-  .flexbox-advantage {
-    max-width: 768px;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .flexbox-advantage {
-    max-width: 1280px;
-  }
-}
 .about {
   background-color: #fff5f6;
   background-image: url("/images/squoosh-milk3-mobile.png");
