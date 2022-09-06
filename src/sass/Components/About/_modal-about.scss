@@ -1,0 +1,58 @@
+.container-modalabout {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.backdrop-about {
+  //   background: rgba(212, 20, 68, 0.53);
+  background: rgba(193, 226, 151, 0.74);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition-duration: 300ms;
+  transition-property: opacity, visibility;
+}
+.modal-about {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: #fff;
+  width: 600px;
+  min-height: 600px;
+  border-radius: 50%;
+
+  transform: translate(-50%, -50%);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
+  transition-property: translate;
+}
+.closebtn-about {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  cursor: crosshair;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 6px;
+
+  &:hover,
+  &:focus {
+    background: #d41443;
+  }
+}
+.ishidden-about {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

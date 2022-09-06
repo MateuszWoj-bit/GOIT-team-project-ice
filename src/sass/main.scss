@@ -5,11 +5,12 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './Base/containers';
-@import './Components/menu-btn';
-@import './Components/header';
-@import './Components/ellipse';
-@import './Components/ice-header';
+@import './Components/header/menu-btn';
+@import './Components/header/header';
+@import './Components/header/ellipse';
+@import './Components/header/ice-header';
 @import './test';
+@import './Components/header/nav';
 // @import './example';
 // @import './test';
 @import './reviews';
@@ -24,12 +25,13 @@
 // @import "./base/variables";
 @import './Components/About/about';
 @import './Components/About/container-about';
-@import './Components/About/variables-about';
-@import './Components/About/is-hidden-about';
+// @import './Components/About/variables-about';
+// @import './Components/About/is-hidden-about';
 @import './Components/About/images-about';
 @import './Components/About/title-about';
 @import './Components/About/list-about';
 @import './Components/About/btn-about';
+@import "./Components/About/modal-about";
 
 @import './Components/Contacts/contacts';
 
@@ -37,3 +39,6 @@
 
 
 @import "./Components/Products/products";
+
+@import './Components/gallery';
+@import './Base/global';
