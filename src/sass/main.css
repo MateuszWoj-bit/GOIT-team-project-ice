@@ -264,6 +264,7 @@
   }
   .header__milk {
     top: 429px;
+    left: 31px;
   }
   .header__arrow {
     width: 26px;
@@ -271,13 +272,13 @@
   }
   .header__arrow-btn {
     top: 583px;
-    left: 218px;
+    left: 249px;
   }
   .header__description {
     font-size: 14px;
     line-height: 20px;
     top: 485px;
-    left: 218px;
+    left: 249px;
     width: 200px;
     height: 78px;
   }
@@ -289,6 +290,7 @@
   }
   .header__list {
     top: 333px;
+    left: 69px;
   }
   .header__how-btn {
     font-size: 14px;
@@ -410,6 +412,16 @@
     color: #ffffff;
     display: flex;
     gap: 35px;
+  }
+  .nav__link:visited {
+    color: #FFFFFF;
+  }
+  .nav__link {
+    color: #FFFFFF;
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: #d41443;
+    transition: 0.4s ease-in-out;
   }
 }
 .review-list {
@@ -1482,4 +1494,8 @@ p {
           margin-inline-start: 0px;
   -webkit-margin-end: 0px;
           margin-inline-end: 0px;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */

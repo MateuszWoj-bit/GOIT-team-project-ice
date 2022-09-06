@@ -2,9 +2,9 @@
   &__buy-btn {
     display: none;
   }
-  &__list{
-      display: none;
-    }
+  &__list {
+    display: none;
+  }
 }
 
 // <!-- Tablet -->
@@ -35,7 +35,7 @@
       height: 44px;
       z-index: 20;
     }
-    &__list{
+    &__list {
       display: none;
     }
   }
@@ -57,5 +57,16 @@
       display: flex;
       gap: 35px;
     }
+    &__link:visited {
+      color : #FFFFFF;
+    }
+    &__link{
+      color : #FFFFFF;
+    }
+  &__link:hover,
+  &__link:focus{
+    color: #d41443;
+    transition: 0.4s ease-in-out;
+  }
   }
 }
