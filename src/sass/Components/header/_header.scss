@@ -38,6 +38,11 @@
     justify-content: center;
     text-align: center;
   }
+   &__product-btn:hover,
+  &__product-btn:focus{
+ background-color: #C7133E;
+ transition: background-color 0.4s ease-in-out;
+  }
   &__how-btn {
     background: #ffffff;
     border-radius: 20px;
@@ -54,6 +59,11 @@
     justify-content: center;
     color: #d41443;
     border: none;
+  }
+  &__how-btn:hover,
+  &__how-btn:focus{
+ background-color: #ECEBEB;
+ transition: background-color 0.4s ease-in-out;
   }
   &__list {
     display: flex;

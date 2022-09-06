@@ -139,6 +139,10 @@
   justify-content: center;
   text-align: center;
 }
+.header__product-btn:hover, .header__product-btn:focus {
+  background-color: #C7133E;
+  transition: background-color 0.4s ease-in-out;
+}
 .header__how-btn {
   background: #ffffff;
   border-radius: 20px;
@@ -155,6 +159,10 @@
   justify-content: center;
   color: #d41443;
   border: none;
+}
+.header__how-btn:hover, .header__how-btn:focus {
+  background-color: #ECEBEB;
+  transition: background-color 0.4s ease-in-out;
 }
 .header__list {
   display: flex;
@@ -371,6 +379,10 @@
 .nav__buy-btn {
   display: none;
 }
+.nav__buy-btn:hover, .nav__buy-btn:focus {
+  background-color: #ECEBEB;
+  transition: background-color 0.4s ease-in-out;
+}
 .nav__list {
   display: none;
 }
@@ -427,7 +439,7 @@
   }
   .nav__link:hover, .nav__link:focus {
     color: #d41443;
-    transition: 0.4s ease-in-out;
+    transition: color 0.4s ease-in-out;
   }
 }
 .review-list {
