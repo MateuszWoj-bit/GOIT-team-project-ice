@@ -5,11 +5,12 @@
 
 // Style dla pliku z przykładem HTML fragmentu
 @import './Base/containers';
-@import './Components/menu-btn';
-@import './Components/header';
-@import './Components/ellipse';
-@import './Components/ice-header';
+@import './Components/header/menu-btn';
+@import './Components/header/header';
+@import './Components/header/ellipse';
+@import './Components/header/ice-header';
 @import './test';
+@import './Components/header/nav';
 // @import './example';
 // @import './test';
 @import './reviews';
@@ -38,3 +39,5 @@
 
 
 @import "./Components/Products/products";
+
+@import './Components/gallery';

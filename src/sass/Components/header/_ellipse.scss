@@ -1,0 +1,24 @@
+.ellipse {
+  position: absolute;
+  top: 83px;
+  right: -20px;
+}
+
+// <!-- Tablet -->
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ellipse {
+    max-width: 324px;
+    margin-right: 117px;
+    top: 31px;
+  }
+}
+
+// <!-- Desktop -->
+@media (min-width: 1200px) {
+  .ellipse {
+    width: 538px;
+    height: 538px;
+    top: 52px;
+    right: 221px;
+  }
+}
