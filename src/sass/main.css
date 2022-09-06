@@ -579,10 +579,15 @@ p {
 .about {
   background-color: #fff5f6;
   background-image: url("/images/squoosh-milk3-mobile.png");
+  background-size: 100%;
+  padding-top: 125px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: right 0 bottom 100px;
   text-align: center;
   align-items: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -627,13 +632,19 @@ p {
   .about__container {
     max-width: 768px;
   }
+  .about__box-contain {
+    display: flex;
+    flex-direction: initial;
+    padding-right: 36px;
+    margin-top: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .about__container {
     max-width: 1200px;
   }
   .about__box-contain {
-    flex-direction: row;
+    display: flex;
   }
 }
 :root {
@@ -651,18 +662,28 @@ p {
 
 @media screen and (min-width: 320px) {
   .about__cow {
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 26px;
+    margin-bottom: 46px;
   }
 }
 @media screen and (min-width: 768px) {
   .about__cow {
-    margin-top: 50px;
+    padding-left: 39px;
+    padding-right: 0px;
+    margin-right: 17px;
+    margin-top: -50px;
     height: 340px;
   }
 }
 @media screen and (min-width: 1200px) {
   .about__cow {
-    margin-top: 55px;
+    padding-left: 112px;
+    padding-right: 0px;
+    margin-right: 74px;
+    margin-top: -50px;
+    height: 516px;
   }
 }
 .about__label {
@@ -699,6 +720,7 @@ p {
     font-size: 48px;
     line-height: 1.145;
     letter-spacing: 0.04em;
+    margin-top: 16px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -718,8 +740,10 @@ p {
 .about__list {
   list-style: none;
   text-decoration: none;
-  margin-top: 106px;
-  margin-left: 76px;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 39px;
 }
 
 .about__item {
@@ -743,6 +767,13 @@ p {
   margin-bottom: 35px;
 }
 
+@media screen and (min-width: 768px) {
+  .about__list {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 66px;
+  }
+}
 .btn {
   display: flex;
   align-items: center;
@@ -766,6 +797,16 @@ p {
   background: #ecebeb;
 }
 
+@media screen and (min-width: 768px) {
+  .btn {
+    margin-top: 62px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn {
+    margin-top: 0px;
+  }
+}
 .hidden-contacts-header {
   display: none;
 }
@@ -775,7 +816,8 @@ p {
   font-size: 12px;
   font-weight: 500;
   background: rgb(255, 245, 246);
-  background: linear-gradient(0deg, rgb(255, 245, 246) 94%, rgb(255, 255, 255) 94%);
+  background: linear-gradient(0deg, rgb(255, 245, 246) 95%, rgb(255, 255, 255) 95%);
+  padding-bottom: 113px;
 }
 .contacts__content {
   display: flex;
@@ -860,7 +902,6 @@ p {
   gap: 10px;
 }
 .contacts__button-locations, .contacts__button-franchise {
-  width: 161.45px;
   height: 44px;
   border: none;
   border-radius: 22px;
@@ -869,15 +910,22 @@ p {
   line-height: 1.31;
 }
 .contacts__button-locations {
+  width: 161.45px;
   background-color: #D41342;
   color: white;
+}
+.contacts__button-franchise {
+  width: 161px;
+  background-color: #FFFFFF;
+  color: #D41443;
 }
 
 @media screen and (min-width: 768px) {
   .contacts {
     font-size: 14px;
     background: rgb(255, 245, 246);
-    background: linear-gradient(0deg, rgb(255, 245, 246) 88%, rgb(255, 255, 255) 88%);
+    background: linear-gradient(0deg, rgb(255, 245, 246) 91%, rgb(255, 255, 255) 91%);
+    padding-bottom: 165px;
   }
   .contacts__list {
     display: flex;
@@ -917,6 +965,7 @@ p {
     flex-direction: unset;
     align-items: center;
     justify-content: center;
+    gap: 14.5px;
   }
   .contacts__button-locations {
     width: 191.45px;
@@ -928,9 +977,12 @@ p {
 @media screen and (min-width: 1200px) {
   .contacts {
     font-size: 16px;
-    background: rgb(255, 245, 246);
-    background: linear-gradient(0deg, rgb(255, 245, 246) 85%, rgb(255, 255, 255) 85%);
-    background-image: url(images/contacts-bg.png);
+    background: linear-gradient(0deg, rgb(255, 245, 246) 89%, rgb(255, 255, 255) 89%);
+  }
+  .contacts__content {
+    background-image: url(../images/contacts-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .contacts__list {
     gap: 30px;
@@ -952,11 +1004,17 @@ p {
   .contacts__details {
     padding-top: 32px;
   }
+  .contacts__buttons {
+    gap: 15px;
+  }
   .contacts__button-locations {
     width: 198px;
   }
   .contacts__button-franchise {
     width: 180px;
+  }
+  .contacts__button-franchise:hover, .contacts__button-franchise:focus {
+    background-color: #ECEBEB;
   }
 }
 .container {
