@@ -1,6 +1,11 @@
 .about__list {
   list-style: none;
   text-decoration: none;
+  margin: 0 auto;
+
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 39px;
 }
 .about__item {
   font-family: 'DM Sans';
@@ -12,10 +17,24 @@
   color: #000000;
 
   text-align: left;
+
   &--light {
     font-size: 14px;
     line-height: 194%;
     letter-spacing: 0.04em;
     color: #907e82;
+  }
+}
+.about__list {
+  .about__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__list {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-bottom: 66px;
   }
 }

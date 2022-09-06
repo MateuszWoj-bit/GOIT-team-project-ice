@@ -1,0 +1,22 @@
+.ice-header {
+  position: absolute;
+  top: 92px;
+  right: 12px;
+  z-index: 10;
+}
+
+// <!-- Tablet -->
+@media (min-width: 768px) and (max-width: 1199px) {
+  .ice-header {
+    top: 63px;
+    right: 227px;
+  }
+}
+
+// <!-- Desktop -->
+@media (min-width: 1200px) {
+  .ice-header{
+    top: 108px;
+    right: 404px;
+  }
+}
