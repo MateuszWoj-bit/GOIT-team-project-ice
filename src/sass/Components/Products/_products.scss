@@ -17,7 +17,7 @@
     text-transform: uppercase;
     color: #D41443;
 
-    margin-bottom: 49px;
+    margin-bottom: 259px;
     margin-top: 15px;
 }
 
@@ -77,9 +77,59 @@
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    padding-top: 38px;
+    margin-top: 147px;
 
     color: #FFFFFF;
+}
+
+    &__figcaption--cream::before {
+    display: flex;
+    content: "";
+    background-image: url("/images/ice-cream.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 335px;
+    height: 335px;
+    top: 950px;
+    border: none;
+}
+
+    &__figcaption--cofee::before {
+    display: flex;
+    content: "";
+    background-image: url("/images/ice-cofee.png");
+    background-repeat: repeat-x;
+    position: absolute;
+    width: 335px;
+    height: 335px;
+    top: 950px;
+    border: none;
+}
+
+    &__figcaption--milkshake::before {
+    display: flex;
+    content: "";
+    background-image: url("/images/ice-milkshake.png");
+    background-repeat: repeat-x;
+    background-size: 335px 335px;
+    position: absolute;
+    width: 335px;
+    height: 335px;
+    top: 950px;
+    border: none;
+}
+
+    &__figcaption::after {
+    display: flex;
+    content: "";
+    margin-top: 32px;
+    background-image: url("/images/Ellipse.svg");
+    background-repeat: repeat-x;
+    background-size: 10px 6px;
+    margin-left: 105px;
+    margin-right: 105px;
+    height: 6px;
+    fill: #FFFFFF;
 }
 
     &__description {
@@ -99,5 +149,11 @@
     display: flex;
     justify-content: center;
     padding-top: 62px;
+}
+
+    &__button {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
 }
 }
