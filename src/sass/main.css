@@ -3,9 +3,8 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-.container-main {
+.container-setup {
   width: 100vw;
-  max-width: 1280px;
   margin: 0 auto;
   background-color: #ffb8ca;
 }
@@ -420,6 +419,8 @@
 @media (min-width: 1200px) {
   .nav {
     gap: 110px;
+    position: absolute;
+    right: 69px;
   }
   .nav__list {
     font-family: "DM Sans";
@@ -440,6 +441,9 @@
   .nav__link:hover, .nav__link:focus {
     color: #d41443;
     transition: color 0.4s ease-in-out;
+  }
+  .nav__item {
+    height: 21px;
   }
 }
 .review-list {

@@ -50,6 +50,8 @@
 @media (min-width: 1200px) {
   .nav {
     gap: 110px;
+    position: absolute;
+    right: 69px;
 
     &__list {
       font-family: 'DM Sans';
@@ -72,6 +74,9 @@
   &__link:focus{
     color: #d41443;
     transition: color 0.4s ease-in-out;
+  }
+  &__item{
+    height: 21px;
   }
   }
 }
