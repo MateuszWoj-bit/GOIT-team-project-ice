@@ -181,6 +181,12 @@
 .header__arrow-btn {
   display: none;
 }
+.header__link:link, .header__link:visited {
+  color: #ffffff;
+}
+.header__link--light:link, .header__link--light:visited {
+  color: #d41443;
+}
 
 @media (min-width: 768px) {
   .header__list {

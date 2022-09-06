@@ -80,6 +80,15 @@
   &__arrow-btn {
     display: none;
   }
+
+  &__link:link,
+   &__link:visited {
+    color: #ffffff;
+  }
+  &__link--light:link, 
+  &__link--light:visited {
+    color: #d41443;
+  }
 }
 
 // <!-- Tablet -->
@@ -193,7 +202,6 @@
     &__product-btn {
       font-size: 14px;
       line-height: 18px;
-
       width: 102px;
       height: 40px;
     }
@@ -215,14 +223,12 @@
       width: 277px;
       left: 69px;
       top: 171px;
+    }
+    &__title--mod {
+      font-size: 58px;
+      line-height: 52px;
+      top: 80px;
+      left: 0;
+    }
   }
-  &__title--mod{
-    font-size: 58px;
-    line-height: 52px;
-    top: 80px;
-    left: 0;
-
-
-  }
-}
 }
