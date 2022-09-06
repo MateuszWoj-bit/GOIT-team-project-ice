@@ -883,6 +883,7 @@
     margin-bottom: 66px;
   }
 }
+.btn {}
 .about__btn {
   display: flex;
   align-items: center;
@@ -1186,6 +1187,9 @@
   }
   .contacts__button-franchise {
     width: 180px;
+  }
+  .contacts__button-franchise:hover, .contacts__button-franchise:focus {
+    background-color: #ECEBEB;
   }
 }
 .container {
