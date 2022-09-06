@@ -190,3 +190,9 @@ align-content: center;
   .test-box{width: 1280px;
 }
 }
+.icon {
+  fill: #ffa5ba;
+  &:hover {
+    fill: #d41443;
+  }
+}

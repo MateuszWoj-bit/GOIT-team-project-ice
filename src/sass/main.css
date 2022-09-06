@@ -139,6 +139,10 @@
   justify-content: center;
   text-align: center;
 }
+.header__product-btn:hover, .header__product-btn:focus {
+  background-color: #C7133E;
+  transition: background-color 0.4s ease-in-out;
+}
 .header__how-btn {
   background: #ffffff;
   border-radius: 20px;
@@ -155,6 +159,10 @@
   justify-content: center;
   color: #d41443;
   border: none;
+}
+.header__how-btn:hover, .header__how-btn:focus {
+  background-color: #ECEBEB;
+  transition: background-color 0.4s ease-in-out;
 }
 .header__list {
   display: flex;
@@ -180,6 +188,12 @@
 }
 .header__arrow-btn {
   display: none;
+}
+.header__link:link, .header__link:visited {
+  color: #ffffff;
+}
+.header__link--light:link, .header__link--light:visited {
+  color: #d41443;
 }
 
 @media (min-width: 768px) {
@@ -264,6 +278,7 @@
   }
   .header__milk {
     top: 429px;
+    left: 31px;
   }
   .header__arrow {
     width: 26px;
@@ -271,13 +286,13 @@
   }
   .header__arrow-btn {
     top: 583px;
-    left: 218px;
+    left: 249px;
   }
   .header__description {
     font-size: 14px;
     line-height: 20px;
     top: 485px;
-    left: 218px;
+    left: 249px;
     width: 200px;
     height: 78px;
   }
@@ -289,6 +304,7 @@
   }
   .header__list {
     top: 333px;
+    left: 69px;
   }
   .header__how-btn {
     font-size: 14px;
@@ -363,6 +379,10 @@
 .nav__buy-btn {
   display: none;
 }
+.nav__buy-btn:hover, .nav__buy-btn:focus {
+  background-color: #ECEBEB;
+  transition: background-color 0.4s ease-in-out;
+}
 .nav__list {
   display: none;
 }
@@ -411,22 +431,41 @@
     display: flex;
     gap: 35px;
   }
+  .nav__link:visited {
+    color: #FFFFFF;
+  }
+  .nav__link {
+    color: #FFFFFF;
+  }
+  .nav__link:hover, .nav__link:focus {
+    color: #d41443;
+    transition: color 0.4s ease-in-out;
+  }
 }
 .review-list {
-  margin-block-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   list-style-type: none;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 .review-p {
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
 }
 
 .reviews {
@@ -500,8 +539,10 @@
 
 .customer {
   margin: 0 auto;
-  margin-block-start: 0;
-  margin-block-end: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.86;
@@ -1268,7 +1309,8 @@
   color: rgb(212, 20, 67);
 }
 .footer__contacts--tel:hover {
-  text-decoration: dashed;
+  -webkit-text-decoration: dashed;
+          text-decoration: dashed;
 }
 
 .footer__contacts--item:hover,
@@ -1468,18 +1510,31 @@
 }
 
 ul {
-  margin-block-start: 0;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
   list-style-type: none;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
 }
 
 p {
   display: block;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
