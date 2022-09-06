@@ -202,6 +202,10 @@
         }
         &__button-franchise {
             width: 180px;
+            &:hover,
+            &:focus {
+                background-color: #ECEBEB;
+            }
         }
     }
 
