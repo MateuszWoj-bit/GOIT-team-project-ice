@@ -1,68 +1,97 @@
-.menu-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 20px;
-  height: 12px;
+.menu-icon {
+  position: absolute;
   cursor: pointer;
-  transition: all 0.5s ease-in-out;
-  
+  display: block;
+  z-index: 41;
+  right: 17px;
 
-  &__burger {
-    width: 20px;
-    height: 1px;
-    background: #d41443;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-  }
-
-  &__burger::after,
-  &__burger::before {
-    content: '';
+  &__line {
+    display: block;
     position: absolute;
-    width: 20px;
+    background-color: #D41443;
     height: 1px;
-    background: #d41443;
-    border-radius: 5px;
-    transition: all 0.5s ease-in-out;
-  }
+    width: 20px;
+    border-radius: 4px;
 
-  &__burger::before {
-    transform: translateY(-7px);
-  }
+    animation: closedMid 0.8s backwards;
+    animation-direction: reverse;
+    
+    &::before {
+      animation: closeTop 0.8s backwards;
+      animation-direction: reverse;
+    }
+    &::after {
+      animation: closedBtm 0.8s backwards;
+      animation-direction: reverse;
+    }
 
-  &__burger::after {
-    transform: translateY(7px);
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      border-radius: 4px;
+      background: #D41443;
+      transition: background 0.8s ease;
+    }
+    &::before {
+      transform: translateY(-6px);
+    }
+    &::after {
+      transform: translateY(6px);
+    }
+  }
+  
+}.menu-btn:checked ~ .nav__list {
+  opacity: 1;
+}
+.menu-btn:checked ~ .menu-icon {
+  .menu-icon {
+    
+    &__line {
+      background: #ffffff;
+      animation: openMid 0.8s forwards;
+      position: fixed;
+      &::before {
+        background: #ffffff;
+        animation: openTop 0.8s forwards;
+        position: fixed;
+      }
+      &::after {
+        background: #ffffff;
+        animation: openBtm 0.8s forwards;
+        position: fixed;
+      }
+    }
   }
 }
-
-/* Animation */
-.menu-btn.open .menu-btn__burger {
-  background: transparent;
-  box-shadow: none;
-}
-.menu-btn.open .menu-btn__burger::before {
-  transform: rotate(45deg);
-  background: #ffffff;
-  width: 14px;
-}
-.menu-btn.open .menu-btn__burger::after {
-  transform: rotate(-45deg);
-  background: #ffffff;
-  width: 14px;
+.menu-btn {
+  display: none;
 }
 
 // <!-- Tablet -->
 @media (min-width: 768px){
-  .menu-btn{
-
+  .menu-icon{
+    &__line{
+      right: 190px;
+    }
     
   }
+.menu-btn:checked ~ .menu-icon {
+  .menu-icon {
+
+    &__line{
+      top: 24px;
+      right: 34px;
+    }
+}
+}
 }
 
 // <!-- Desktop -->
 @media (min-width: 1200px){
-  .menu-btn{
+  .menu-icon{
     display: none;
   }
 }
