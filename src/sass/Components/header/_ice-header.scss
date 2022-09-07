@@ -1,7 +1,7 @@
 .ice-header {
   position: absolute;
   top: 92px;
-  right: 12px;
+  right: 32px;
   z-index: 10;
 }
 
@@ -9,7 +9,7 @@
 @media (min-width: 768px) and (max-width: 1199px) {
   .ice-header {
     top: 63px;
-    right: 227px;
+    right: 247px;
   }
 }
 

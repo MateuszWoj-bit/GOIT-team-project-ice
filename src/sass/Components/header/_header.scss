@@ -11,6 +11,7 @@
     color: #ffffff;
     position: absolute;
     top: 193px;
+    left: 20px;
     z-index: 20;
     margin: 0;
   }
@@ -20,6 +21,8 @@
     color: #d41443;
     position: relative;
     top: 0;
+    left: 0;
+    
   }
   &__product-btn {
     background: #d41443;
@@ -69,6 +72,7 @@
     display: flex;
     position: absolute;
     top: 318px;
+    left: 34px;
     gap: 8px;
     z-index: 15;
   }
@@ -110,6 +114,8 @@
     &__title {
       width: 162px;
       top: 102px;
+      position: absolute;
+    left: 34px;
       font-size: 22px;
       line-height: 25.19px;
     }
@@ -122,24 +128,25 @@
     &__girl {
       display: block;
       position: absolute;
-      right: 0;
+      right: 34px;
       top: 266px;
     }
     &__milk {
       display: block;
       position: absolute;
       top: 245px;
+    left: 34px;
     }
     &__cafenr {
       display: block;
       position: absolute;
-      right: 0;
+      right: 34px;
       top: 96px;
     }
     &__foodtracknr {
       display: block;
       position: absolute;
-      right: 0;
+      right: 34px;
       top: 152px;
     }
     &__description {
@@ -155,7 +162,7 @@
       height: 48px;
       position: absolute;
       top: 292px;
-      left: 120px;
+      left: 154px;
     }
     &__arrow {
       width: 18px;
@@ -168,7 +175,8 @@
       background-color: transparent;
       position: absolute;
       top: 347px;
-      left: 120px;
+      left: 154px;
+      cursor:crosshair;
     }
   }
 }

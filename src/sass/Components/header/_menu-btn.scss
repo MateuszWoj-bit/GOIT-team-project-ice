@@ -8,6 +8,7 @@
   &__line {
     display: block;
     position: absolute;
+    right: 5px;
     background-color: #D41443;
     height: 1px;
     width: 20px;
@@ -53,6 +54,7 @@
       background: #ffffff;
       animation: openMid 0.8s forwards;
       position: fixed;
+      right: 20px;
       &::before {
         background: #ffffff;
         animation: openTop 0.8s forwards;
@@ -74,7 +76,7 @@
 @media (min-width: 768px){
   .menu-icon{
     &__line{
-      right: 190px;
+      right: 224px;
     }
     
   }
