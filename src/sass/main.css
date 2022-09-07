@@ -176,6 +176,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
+  cursor: crosshair;
 }
 .header__product-btn:hover, .header__product-btn:focus {
   background-color: #C7133E;
@@ -197,6 +198,7 @@
   justify-content: center;
   color: #d41443;
   border: none;
+  cursor: crosshair;
 }
 .header__how-btn:hover, .header__how-btn:focus {
   background-color: #ECEBEB;
@@ -437,6 +439,7 @@
   height: 44px;
   z-index: 20;
   margin-top: 60px;
+  cursor: crosshair;
 }
 .nav__buy-btn--desk {
   display: none;
@@ -455,7 +458,7 @@
   align-items: left;
   padding-left: 21px;
   width: 250px;
-  height: 502px;
+  height: 100vh;
   color: #fff;
   background: #e17992;
   z-index: 40;
@@ -498,7 +501,6 @@
   }
   .nav__list {
     width: 254px;
-    height: 1020px;
     padding-left: 24px;
   }
   .nav__buy-btn {
@@ -545,6 +547,9 @@
   .nav__list-desk {
     display: flex;
     gap: 35px;
+  }
+  .nav__list {
+    display: none;
   }
 }
 @-webkit-keyframes openTop {
@@ -742,27 +747,43 @@
   line-height: 1.86;
 }
 
-.reviews-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 0;
-  margin-top: 30px;
+.carousel {
+  position: relative;
 }
-.reviews-nav__item {
+.carousel__item {
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+.carousel__item--selected {
+  display: flex;
+}
+.carousel__nav {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.carousel__button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 9px;
+  border-radius: 50%;
+  background-color: rgb(217, 217, 217);
+  cursor: pointer;
+}
+.carousel__button--selected {
   width: 12.4px;
   height: 12px;
+  border-radius: 0%;
+  background-color: transparent;
   background-image: url(../images/home.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-.reviews-nav__item--dot {
-  width: 12px;
-  height: 12px;
-  margin-left: 18px;
-  border-radius: 50%;
-  background-color: rgb(217, 217, 217);
 }
 
 @media screen and (min-width: 768px) {
@@ -796,11 +817,11 @@
   .customer {
     font-size: 16px;
   }
-  .reviews-nav {
+  .carousel__nav {
     margin-top: 35px;
   }
 }
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1200px) {
   .reviews {
     padding-top: 123px;
     padding-bottom: 132px;
@@ -832,9 +853,6 @@
   }
   .customer {
     font-size: 20px;
-  }
-  .reviews-nav {
-    margin-top: 35px;
   }
 }
 .advantage {

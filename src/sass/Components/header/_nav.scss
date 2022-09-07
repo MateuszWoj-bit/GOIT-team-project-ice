@@ -18,6 +18,7 @@
     height: 44px;
     z-index: 20;
     margin-top: 60px;
+    cursor: crosshair;
   }
   &__buy-btn--desk {
     display: none;
@@ -38,11 +39,12 @@
     align-items: left;
     padding-left: 21px;
     width: 250px;
-    height: 502px;
+    height: 100vh;
     color: #fff;
     background: #e17992;
     z-index: 40;
     transition: opacity 0.8s;
+
   }
   &__list-desk{
     display: none;
@@ -86,7 +88,6 @@
 
     &__list{
 width: 254px;
-height: 1020px;
 padding-left: 24px;
 }
 &__buy-btn{
@@ -109,8 +110,7 @@ padding-left: 24px;
     gap: 110px;
     position: absolute;
     right: 69px;
-    &__buy-btn--desk {
-    }
+    
     &__link {
       font-family: 'DM Sans';
       font-style: normal;
@@ -139,6 +139,9 @@ padding-left: 24px;
     &__list-desk{
       display: flex;
       gap: 35px;
+    }
+    &__list{
+      display: none;
     }
   }
 }
