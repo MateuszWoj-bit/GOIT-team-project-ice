@@ -7,6 +7,7 @@
     font-weight: 500;
     background: rgb(255,245,246);
     background: linear-gradient(0deg, rgba(255,245,246,1) 95%, rgba(255,255,255,1) 95%);
+    background-size: 100%;
     padding-bottom: 113px;
     &__content {
         display: flex;
@@ -98,16 +99,31 @@
         font-size: 16px;
         font-weight: 700;
         line-height: 1.31;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
     }
     &__button-locations {
         width: 161.45px;
         background-color: #D41342;
-        color: #ffff;
+        color: #FFFFFF;
     }
     &__button-franchise {
         width: 161px;
         background-color: #FFFFFF;
         color: #D41443;
+    }
+    &__button-icon1 {
+        width: 8px;
+        height: 14px;
+        margin-left: 8px;
+    }
+
+    &__button-icon2 {
+        width: 8px;
+        height: 14px;
+        margin-left: 13px;
     }
 }
 
@@ -162,6 +178,9 @@
         }
         &__button-franchise {
             width: 174.05px;
+        }
+        &__button-icon1 {
+            margin-left: 13px;
         }
     }
 }
