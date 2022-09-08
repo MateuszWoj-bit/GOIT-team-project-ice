@@ -5,7 +5,7 @@
 }
 .about__backdrop {
   //   background: rgba(212, 20, 68, 0.53);
-  background: rgba(193, 226, 151, 0.74);
+  background: rgba(#fff5f6, 0.74);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
   width: 100%;
@@ -77,7 +77,7 @@
 
   &:hover,
   &:focus {
-    background: rgba(193, 226, 151, 0.74);
+    background: rgba(193, 226, 151);
   }
 }
 .ishidden-about {
@@ -91,7 +91,13 @@
   height: 800px;
   --padding: 95px;
   padding: var(--padding);
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8911939775910365) 51%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(194, 226, 151, 0) 0%,
+    rgba(194, 226, 151, 0.5130427170868348) 21%,
+    rgba(194, 226, 151, 0.958420868347339) 46%,
+    rgba(194, 226, 151, 1) 100%
+  );
 
   transform: translateY(78%);
   transition: transform 800ms ease;
@@ -102,7 +108,7 @@
   font-size: 14px;
   line-height: 176%;
   letter-spacing: 0.04em;
-  color: #000;
+  color: #fff;
 }
 
 .about__modalcontent:hover .about-modalbox {
@@ -111,7 +117,7 @@
 .about-modalbox__title {
   font-family: 'Titan One';
   font-weight: 400;
-  color: #d41342;
+  color: #fff;
   font-size: 30px;
   line-height: 1.166;
 
@@ -130,7 +136,7 @@
 
   transform: scaleX(0);
   transform-origin: left;
-  transition: transform 500ms ease;
+  transition: transform 1200ms ease;
 }
 .about__modalcontent:hover .about-modalbox__title::after {
   transform: scaleX(1);
@@ -142,6 +148,44 @@
   font-size: 14px;
   line-height: 176%;
   letter-spacing: 0.04em;
-  color: #000;
+  color: #fff;
   margin-top: 40px;
+}
+.about-modalbox__lista {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.about-modalbox__smacznego {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-family: 'Titan One';
+}
+
+@media screen and (min-width: 320px) {
+  .about__closebtn {
+    margin-top: 5px;
+    margin-right: 335px;
+  }
+  .about__modalcontent {
+    width: 320px;
+  }
+  .about-modalbox {
+    width: 320px;
+    height: 800px;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    font-size: 12px;
+  }
+  .about-modalbox__title {
+    font-size: 20px;
+    margin-left: -15px;
+    margin-top: 30px;
+  }
+  .about-modalbox__smacznego {
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
 }
