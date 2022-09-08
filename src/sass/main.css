@@ -546,6 +546,10 @@
     display: none;
   }
 }
+.test {
+  pointer-events: none;
+}
+
 @keyframes openTop {
   0% {
     transform: translateY(-5px) rotate(0deg);

@@ -44,6 +44,7 @@
     background: #e17992;
     z-index: 40;
     transition: opacity 0.8s;
+    
 
   }
   &__list-desk{
@@ -145,3 +146,4 @@ padding-left: 24px;
     }
   }
 }
+.test{pointer-events: none;}
