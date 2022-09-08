@@ -26,6 +26,20 @@
   &:focus {
     background: #ecebeb;
   }
+  &--green {
+    background: rgba(193, 226, 151, 0.74);
+    color: #fff;
+    margin-top: 20px;
+    transition: transform 800ms easy;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 150px;
+
+    &:hover {
+      transform: scale(1.1);
+      background: #ffa5ba;
+    }
+  }
 }
 
 @media screen and (min-width: 768px) {
