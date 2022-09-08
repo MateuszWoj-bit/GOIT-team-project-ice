@@ -1,24 +1,44 @@
-<div class="container-main">
+<div class="container-bg">
+<div class="container-setup">
   <div class="container-header">
     
     <!-- Nawigation -->
     <div id="home"></div>
     <div class="container-nav">
         <img src="./images/logo@1x.png" alt="icecream logo" />
-      <section class="nav">
-           <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#home">Home</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about-us">About us</a></li>
-          <li class="nav__item"><a class="nav__link" href="#how-is-made">How it's made?</a></li>
-          <li class="nav__item"><a class="nav__link" href="#our-products">Our products</a></li>
-          <li class="nav__item"><a class="nav__link" href="#cont">Contact</a></li>
+      
+        <section class="nav">
+<ul class="nav__list-desk">
+          <li class="nav__link-desk"><a class="nav__anchor" href="#home">Home</a></li>
+          <li class="nav__link-desk"><a class="nav__anchor" href="#about-us">About us</a></li>
+          <li class="nav__link-desk"><a class="nav__anchor" href="#how-is-made">How it's made?</a></li>
+          <li class="nav__link-desk"><a class="nav__anchor" href="#our-products">Our products</a></li>
+          <li class="nav__link-desk"><a class="nav__anchor" href="#cont">Contact</a></li>
         </ul>
-        <div class="menu-btn">
-         <div class="menu-btn__burger"></div>
+      
+        
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+          <span class="menu-icon__line"></span>
+        </label> 
+    
+<div class="nav__list">
+  <button class="nav__buy-btn">Buy now<svg class="about__icon-2">
+              <use href="./images/about-sprite-omg.svg#icon-2"></use>
+            </svg></button>
+  <ul class="nav__links">
+          <li class="nav__link"><a class="nav__anchor" href="#home">Home</a></li>
+          <li class="nav__link"><a class="nav__anchor" href="#about-us">About us</a></li>
+          <li class="nav__link"><a class="nav__anchor" href="#how-is-made">How it's made?</a></li>
+          <li class="nav__link"><a class="nav__anchor" href="#our-products">Our products</a></li>
+          <li class="nav__link"><a class="nav__anchor" href="#cont">Contact</a></li>
+</ul>
         </div>
-       
-        <button class="nav__buy-btn">Buy now></button>
+        <button class="nav__buy-btn nav__buy-btn--desk">Buy now<svg class="about__icon-2">
+              <use href="./images/about-sprite-omg.svg#icon-2"></use>
+            </svg></button>
       </section>
+    </div>
     </div>
     
 
@@ -62,8 +82,8 @@
       <img class="header__foodtracknr" src="./images/23imgtab.png" alt="number 23">
     </picture>
     <span class="header__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</span>
-      <button class="header__arrow-btn"> 
-      <img class="header__arrow" src="./images/arrow-right.png" alt="arrow">
+      <button class="header__arrow-btn">  
+      <img class="header__arrow" src="./images/arrow-right.png" alt="arrow" >
     </button>
   </div>
 </div>
