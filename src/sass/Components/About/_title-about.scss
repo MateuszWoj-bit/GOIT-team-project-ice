@@ -3,25 +3,21 @@
   font-weight: 400;
   text-align: center;
   color: #ffa5ba;
+
+  font-size: 18px;
+  line-height: 1.166;
 }
 .about__title {
   font-family: 'Titan One';
   font-weight: 400;
   text-align: center;
   color: #d41443;
+
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
 }
 
-@media screen and (min-width: 320px) {
-  .about__label {
-    font-size: 18px;
-    line-height: 1.166;
-  }
-  .about__title {
-    font-size: 34px;
-    line-height: 1.147;
-    letter-spacing: 0.04em;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__label {
     font-size: 26px;
