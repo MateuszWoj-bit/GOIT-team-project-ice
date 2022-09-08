@@ -849,6 +849,7 @@
   }
   .advantage__paragarph--description {
     font-size: 14px;
+    margin-right: 20px;
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
@@ -920,28 +921,20 @@
   width: 100%;
   align-items: center;
   margin: 0 auto;
+  max-width: 320px;
 }
 
 .about__box-title {
   justify-content: center;
+  padding-left: 61px;
+  padding-right: 61px;
 }
 
 .about__box-contain {
   display: flex;
+  flex-direction: column;
 }
 
-@media screen and (min-width: 320px) {
-  .about__container {
-    max-width: 320px;
-  }
-  .about__box-title {
-    padding-left: 61px;
-    padding-right: 61px;
-  }
-  .about__box-contain {
-    flex-direction: column;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__container {
     max-width: 768px;
@@ -961,14 +954,13 @@
     display: flex;
   }
 }
-@media screen and (min-width: 320px) {
-  .about__cow {
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 26px;
-    margin-bottom: 46px;
-  }
+.about__cow {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 26px;
+  margin-bottom: 46px;
 }
+
 @media screen and (min-width: 768px) {
   .about__cow {
     padding-left: 39px;
@@ -992,6 +984,8 @@
   font-weight: 400;
   text-align: center;
   color: #ffa5ba;
+  font-size: 18px;
+  line-height: 1.166;
 }
 
 .about__title {
@@ -999,19 +993,11 @@
   font-weight: 400;
   text-align: center;
   color: #d41443;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
 }
 
-@media screen and (min-width: 320px) {
-  .about__label {
-    font-size: 18px;
-    line-height: 1.166;
-  }
-  .about__title {
-    font-size: 34px;
-    line-height: 1.147;
-    letter-spacing: 0.04em;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__label {
     font-size: 26px;
@@ -1098,6 +1084,19 @@
 .about__btn:hover, .about__btn:focus {
   background: #ecebeb;
 }
+.about__btn--green {
+  background: rgba(193, 226, 151, 0.74);
+  color: #fff;
+  margin-top: 20px;
+  transition: transform 800ms easy;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 150px;
+}
+.about__btn--green:hover {
+  transform: scale(1.1);
+  background: #ffa5ba;
+}
 
 @media screen and (min-width: 768px) {
   .btn {
@@ -1116,13 +1115,13 @@
   align-items: flex-end;
 }
 
-.container-modalabout {
+.about__container-modal {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
 
-.backdrop-about {
+.about__backdrop {
   background: rgba(193, 226, 151, 0.74);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   position: fixed;
@@ -1137,40 +1136,118 @@
   transition-property: opacity, visibility;
 }
 
-.modal-about {
+.about__modalcontent {
   position: absolute;
   top: 50%;
   left: 50%;
   background-color: #fff;
-  width: 600px;
-  min-height: 600px;
-  border-radius: 50%;
+  width: 650px;
+  height: 800px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-image: url("/images/about-ice-cream-sqoosh.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transform: translate(-50%, -50%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
   transition-property: translate;
 }
-
-.closebtn-about {
+.about__modalcontent--overlay {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 650px;
+  height: 800px;
+  border-radius: 50px;
+}
+
+.about__closebtn {
+  position: absolute;
+  margin-top: 15px;
+  margin-right: 15px;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: crosshair;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  padding: 6px;
+  padding: 2px;
+  z-index: 10;
 }
-.closebtn-about:hover, .closebtn-about:focus {
-  background: #d41443;
+.about__closebtn:hover, .about__closebtn:focus {
+  background: rgba(193, 226, 151, 0.74);
 }
 
 .ishidden-about {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.about-modalbox {
+  width: 650px;
+  height: 800px;
+  --padding: 95px;
+  padding: var(--padding);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.5774684874) 51%, rgb(255, 255, 255) 100%);
+  transform: translateY(78%);
+  transition: transform 800ms ease;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #d41342;
+}
+
+.about__modalcontent:hover .about-modalbox {
+  transform: translateY(0);
+}
+
+.about-modalbox__title {
+  font-family: "Titan One";
+  font-weight: 400;
+  color: #d41342;
+  font-size: 30px;
+  line-height: 1.166;
+  position: relative;
+  width: max-content;
+}
+
+.about-modalbox__title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -5px;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  width: calc(100% + var(--padding));
+  background: rgba(193, 226, 151, 0.74);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+
+.about__modalcontent:hover .about-modalbox__title::after {
+  transform: scaleX(1);
+}
+
+.about-modalbox__text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #d41342;
+  margin-top: 40px;
 }
 
 .hidden-contacts-header {
