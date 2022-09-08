@@ -1,6 +1,10 @@
-<!-- container bg -->
-<div id="our-products"></div>
+    
+<div id="gallery"></div>
 <div class="gallery__bground">
+  <picture>
+      <source media="(max-width: 280px)"srcset="./images/galery_mobile.jpg 1x, ./images/galery_mobile.jpg 2x"/> 
+      <source media="(max-width: 340px)"srcset="./images/galery_tablet.jpg 1x, ./images/galery_tablet.jpg 2x"/> 
+      <source media="(min-width: 516px)"srcset="./images/galery_desktop.jpg 1x, ./images/galery_desktop.jpg 2x"/>       
   <img
     class="gallery__pic"
     src="images/galery_mobile.jpg"
@@ -10,6 +14,7 @@
       images/galery_tablet.jpg  340w,
       images/galery_desktop.jpg 516w
     "
-    sizes="(min-width: 1200px) 516px,(min-width: 768px) 340px, (min-width: 320px) 280px,"
+    sizes="(min-width: 1200px) 516px,(min-width: 768px) 340px, (min-width: 320px) 280px"
   />
+  </picture>
 </div>
