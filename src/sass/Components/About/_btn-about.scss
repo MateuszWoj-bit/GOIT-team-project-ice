@@ -27,7 +27,7 @@
     background: #ecebeb;
   }
   &--green {
-    background: rgba(193, 226, 151, 0.74);
+    background: #ffa5ba;
     color: #fff;
     margin-top: 20px;
     transition: transform 800ms easy;
@@ -37,7 +37,8 @@
 
     &:hover {
       transform: scale(1.1);
-      background: #ffa5ba;
+      background: rgba(193, 226, 151, 0.74);
+      
     }
   }
 }
