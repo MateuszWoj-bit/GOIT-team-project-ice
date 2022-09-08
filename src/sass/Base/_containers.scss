@@ -1,8 +1,12 @@
-.container-main {
+.container-bg{
+background-color: #ffb8ca;
+}
+.container-setup {
   width: 100vw;
   max-width: 1280px;
   margin: 0 auto;
   background-color: #ffb8ca;
+  position: relative;
 }
 
 .container-header {
@@ -10,7 +14,6 @@
   margin: 0 auto;
   height: 502px;
   padding-top: 6px;
-  position: relative;
 }
 
 .container-nav {
@@ -28,6 +31,7 @@
     width: calc(100% - 68px);
     padding-top: 31px;
     height: 399px;
+    
   }
 }
 

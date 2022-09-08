@@ -1,9 +1,9 @@
-.container-modalabout {
+.about__container-modal {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
-.backdrop-about {
+.about__backdrop {
   //   background: rgba(212, 20, 68, 0.53);
   background: rgba(193, 226, 151, 0.74);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -20,39 +20,128 @@
   transition-duration: 300ms;
   transition-property: opacity, visibility;
 }
-.modal-about {
+.about__modalcontent {
   position: absolute;
   top: 50%;
   left: 50%;
   background-color: #fff;
-  width: 600px;
-  min-height: 600px;
-  border-radius: 50%;
+  width: 650px;
+  height: 800px;
+  border-radius: 50px;
+
+  overflow: hidden;
+
+  background-image: url('/images/about-ice-cream-squoosh.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   transform: translate(-50%, -50%);
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.4, 1);
   transition-property: translate;
+
+  // &--green {
+  //   align-items: center;
+  // }
+
+  &--overlay {
+    position: absolute;
+    // background-color: rgba(47, 48, 58, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    width: 650px;
+    height: 800px;
+    border-radius: 50px;
+  }
 }
-.closebtn-about {
+.about__closebtn {
   position: absolute;
+  margin-top: 15px;
+  margin-right: 15px;
   top: 8px;
   right: 8px;
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   cursor: crosshair;
   background: #ffffff;
+
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  padding: 6px;
+  padding: 2px;
+
+  z-index: 10;
 
   &:hover,
   &:focus {
-    background: #d41443;
+    background: rgba(193, 226, 151, 0.74);
   }
 }
 .ishidden-about {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.about-modalbox {
+  width: 650px;
+  height: 800px;
+  --padding: 95px;
+  padding: var(--padding);
+  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8911939775910365) 51%, rgba(255,255,255,1) 100%);
+
+  transform: translateY(78%);
+  transition: transform 800ms ease;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000;
+}
+
+.about__modalcontent:hover .about-modalbox {
+  transform: translateY(0);
+}
+.about-modalbox__title {
+  font-family: 'Titan One';
+  font-weight: 400;
+  color: #d41342;
+  font-size: 30px;
+  line-height: 1.166;
+
+  position: relative;
+  width: max-content;
+}
+.about-modalbox__title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  margin-bottom: -5px;
+  height: 4px;
+  left: calc(var(--padding) * -1);
+  width: calc(100% + var(--padding));
+  background: rgba(193, 226, 151, 0.74);
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 500ms ease;
+}
+.about__modalcontent:hover .about-modalbox__title::after {
+  transform: scaleX(1);
+}
+.about-modalbox__text {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 176%;
+  letter-spacing: 0.04em;
+  color: #000;
+  margin-top: 40px;
 }

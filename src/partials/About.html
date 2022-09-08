@@ -1,13 +1,21 @@
-
 <div id="how-is-made"></div>
 <section class="about">
-  <container class="about__container">
+  <div class="about__container">
     <div class="about__box-title">
       <label class="about__label">TRADITION AND LOVE</label>
       <h1 class="about__title">HOW IT'S MADE?</h1>
     </div>
     <div class="about__box-contain">
-      <img
+      <picture>
+        <source srcset="images/squoosh-how1-desktop.png" media="(min-width: 1200px)" />
+        <source srcset="images/squoosh-how1-desktopx2.png 2x" media="(min-width: 1200px)" />
+        <source srcset="images/squoosh-how2-tablet.png" media="(min-width: 768px)" />
+        <source srcset="images/squoosh-how2-tabletx2.png 2x" media="(min-width: 768px)" />
+        <source srcset="images/squoosh-how3-mobile.png" media="(max-width: 767px)" />
+        <source srcset="images/squoosh-how3-mobilex2.png 2x" media="(max-width: 767px)" />
+        <img class="about__cow" src="images/squoosh-how1-desktop.png" alt="cow and milk" />
+      </picture>
+      <!-- <img
         class="about__cow"
         src="images/squoosh-how1-desktop.png"
         alt="cow and milk"
@@ -17,7 +25,7 @@
           images/squoosh-how1-desktop.png 500w
         "
         sizes="(min-width: 1200px) 500px, (min-width: 768px) 354px, (min-width: 320px) 450px, 100vw"
-      />
+      /> -->
       <ul class="about__list">
         <li class="about__item">
           Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
@@ -40,15 +48,56 @@
         </li>
       </ul>
     </div>
-  </container>
+  </div>
 </section>
 
-<div class="container-modalabout">
-  <div class="backdrop-about ishidden-about" data-modal>
-    <div class="modal-about">
-      <svg class="closebtn-about" data-modal-close>
-        <use href="./images/about-sprite-omg.svg#icon-ice-cream"></use>
-      </svg>
+<div class="about__container-modal">
+  <div class="about__backdrop ishidden-about" data-modal>
+    <div class="about__modalcontent modal-about">
+      <div class="about__modalcontent--overlay">
+        <svg class="about__closebtn" data-modal-close>
+          <use href="./images/about-sprite-omg.svg#icon-ice-cream"></use>
+        </svg>
+        <div class="about-modalbox">
+          <p class="about-modalbox__title"
+            >KREMOWE LODY PISTACJOWE
+            <p
+          /></p>
+          <p class="about-modalbox__text">
+            Składniki:
+            <p />
+            400 ml śmietany kremówki 30% lub 36%,
+            <p />
+            200 ml pełnego mleka (3,2 %),
+            <p />
+            350 g kremu pistacjowego.
+            <p />
+
+            Wszystkie składniki umieścić w garnku. Podgrzewać, mieszając, do całkowitego połączenia
+            się składników i otrzymania gładkiej mieszanki. W razie konieczności zmiksować
+            blenderem.
+            <p />
+
+            Mieszankę lodową przelać do pojemnika, przykryć, umieścić na 24 godziny w lodówce by
+            schłodzić do temperatury lodówkowej.
+            <p />
+
+            Schłodzoną mieszankę lodową przelać do maszyny do lodów i dalej postępować według
+            instrukcji jej producenta. Przełożyć do pojemnika, przykryć i włożyć na kilka godzin do
+            zamrażarki.
+            <p />
+
+            Lody można również wykonać bez maszyny – schłodzone składniki zmiksować (końcówka
+            miksera ubijająca), przelać do pojemnika, włożyć do zamrażarki. Podczas chłodzenia mniej
+            więcej co 30 minut przez pierwsze 3 godziny miksować, by nie wytworzyły się kryształki
+            lodu i by lody był bardziej puszyste. Zamrozić.
+            <p />
+
+            Smacznego.</p
+          >
+          <button class="about__btn about__btn--green" data-modal-open>OTHER RECIPES</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
